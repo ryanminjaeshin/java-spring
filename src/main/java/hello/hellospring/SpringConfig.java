@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SpringConfig {
 
-    //구동시 memberService와 memberRepositry 스프링빈에 등록
+    //구동시 memberService와 memberRepository 스프링빈에 등록
     @Bean
     public MemberService memberService(){
         return new MemberService(memberRepository());
