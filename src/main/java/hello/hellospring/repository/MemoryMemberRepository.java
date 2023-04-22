@@ -1,10 +1,12 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
 // implements MemberRepository -> Option + Enter => Imports methods
+@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     // Create a map to save member
