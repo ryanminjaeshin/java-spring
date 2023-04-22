@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.*;
 
 // implements MemberRepository -> Option + Enter => Imports methods
-@Repository
+//@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     // Create a map to save member
