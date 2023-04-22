@@ -15,6 +15,7 @@ public class MemberController {
      private final MemberService memberService;
 
     @Autowired
+    // DI *생성자 주입
     // 스프링 컨테이너에 MemberService를 연결.
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
