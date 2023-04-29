@@ -19,6 +19,5 @@ public class MemberController {
     // 스프링 컨테이너에 MemberService를 연결.
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
-
     }
 }
