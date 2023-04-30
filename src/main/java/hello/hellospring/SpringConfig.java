@@ -6,6 +6,7 @@ import hello.hellospring.service.MemberService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+// Spring bean 자바코드로 직접 등록 방식
 @Configuration
 public class SpringConfig {
 
