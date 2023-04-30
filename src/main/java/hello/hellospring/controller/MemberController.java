@@ -10,11 +10,10 @@ import javax.swing.plaf.metal.MetalMenuBarUI;
 // Controller - 외부요청 받고, Service에서 비지니스 로직을 만들고, Repository에서 데이터를 저장
 @Controller
 public class MemberController {
-
     // private final MemberService memberService = new MemberService(); 사용하는 대신 @Autowired 사용
      private final MemberService memberService;
 
-    @Autowired
+    @Autowired // 생성자에 Autowired라고 돠어 있으, 컨테이너에 있는 memberService를 연결시켜줌
     // DI *생성자 주입
     // 스프링 컨테이너에 MemberService를 연결.
     public MemberController(MemberService memberService) {
