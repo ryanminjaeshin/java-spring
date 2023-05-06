@@ -27,6 +27,7 @@ public class JpaMemberRepository implements MemberRepository{
         return Optional.ofNullable(member);
     }
 
+    // PK 기반이 아니면 JPQL 작성해야함
     @Override
     public Optional<Member> findByName(String name) {
         List<Member> result = em.createQuery("select m from Member m where m.name =:name", Member.class)
